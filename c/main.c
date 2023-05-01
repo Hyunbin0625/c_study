@@ -3,8 +3,8 @@
 
 int main()
 {
-	Base();
-
+//	Base();
+	DataType();
 
 	return 0;
 }
