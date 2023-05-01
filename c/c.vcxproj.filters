@@ -3,10 +3,19 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="stdafx.c" />
-    <ClCompile Include="Base\Base.c" />
+    <ClCompile Include="Base\Base.c">
+      <Filter>Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Base\Base.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{33ad5658-a19b-4239-a15b-a1b3dd4e7324}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
