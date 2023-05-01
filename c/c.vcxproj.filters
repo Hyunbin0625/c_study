@@ -6,16 +6,25 @@
     <ClCompile Include="Base\Base.c">
       <Filter>Base</Filter>
     </ClCompile>
+    <ClCompile Include="DataType\DataType.c">
+      <Filter>DataType</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Base\Base.h">
       <Filter>Base</Filter>
     </ClInclude>
+    <ClInclude Include="DataType\DataType.h">
+      <Filter>DataType</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
       <UniqueIdentifier>{33ad5658-a19b-4239-a15b-a1b3dd4e7324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataType">
+      <UniqueIdentifier>{afb07552-5a72-4ea2-b22a-1769c994f297}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
