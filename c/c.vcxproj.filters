@@ -9,6 +9,9 @@
     <ClCompile Include="DataType\DataType.c">
       <Filter>DataType</Filter>
     </ClCompile>
+    <ClCompile Include="Operator\Operator.c">
+      <Filter>Operator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -18,6 +21,9 @@
     <ClInclude Include="DataType\DataType.h">
       <Filter>DataType</Filter>
     </ClInclude>
+    <ClInclude Include="Operator\Operator.h">
+      <Filter>Operator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -25,6 +31,9 @@
     </Filter>
     <Filter Include="DataType">
       <UniqueIdentifier>{afb07552-5a72-4ea2-b22a-1769c994f297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operator">
+      <UniqueIdentifier>{0cb147ab-d875-4da0-847d-0870abba21db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

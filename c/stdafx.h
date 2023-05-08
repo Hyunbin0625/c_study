@@ -9,3 +9,4 @@
 // Files, Base에 선언한 함수에 접근하기 위해 포함
 #include "Base/Base.h"
 #include "DataType/DataType.h"
+#include "Operator/Operator.h"
