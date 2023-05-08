@@ -81,6 +81,7 @@ void DataSize()
 
 void DataRange()
 {
+	// limits 헤더를 포함시켜 자료형의 범위를 쉽게 사용할 수 있다.
 	printf("char의 범위 : %d ~ %d\n", SCHAR_MIN, SCHAR_MAX);
 	printf("unsigned char의 범위 : %u ~ %u\n", 0U, UCHAR_MAX);
 
