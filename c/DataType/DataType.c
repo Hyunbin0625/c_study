@@ -1,79 +1,118 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 #include <limits.h>
 #include <float.h>
 #include "DataType.h"
 
 void DataType()
 {
-	DataSize();
+//	DataSize();
 //	DataRange();
+	DataFlow();
 }
 
 void DataSize()
 {
-	char ch;	// ¼±¾ğ
-	ch = 'A';	// º¯¼öÀÇ ÃÊ±âÈ­
-	// º¯¼öÀÇ ¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±âÈ­
-//	char ch1 = 'A';
+	char ch;	// ì„ ì–¸
+	ch = 'A';	// ë³€ìˆ˜ì˜ ì´ˆê¸°í™”
+	// ë³€ìˆ˜ì˜ ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”
+//	char ch = 'A';
 
-	// ¾ğ¾î, ÄÄÆÄÀÏ·¯, ÇÃ·¹Æû(x64, x86), Àı´ëÀûÀÎ ¼öÄ¡(Byte)°¡ ¾Æ´Ï´Ù
-	// short <= int <= long <= long long, º¯ÇÏÁö ¾Ê´Â °ø½Ä
-	/*
-	const(sonstant : º¯ÇÑ¾ø´Â) Å°¿öµå
-	º¯¼öÀÇ »ó¼öÈ­
-	¼öÁ¤ÇÒ ¼ö ¾ø°ÔµÈ´Ù.
-	*/
 	short shortNum = 10;		// 2Byte
-	const int integerNum = 20;	// 4Byte Á¤¼öÇü
+	int integerNum = 20;		// 4Byte ì •ìˆ˜í˜•
 	long longNum = 30;			// 4Byte
 	long long longLongNum = 40;	// 8Byte
-	//	integerNum = 40;
 
-	float fltNum = 0.1f;	// 4Byte ½Ç¼öÇü
+	float fltNum = 0.1f;		// 4Byte ì‹¤ìˆ˜í˜•, floatí˜•ì€ ì‹¤ìˆ˜ ë’¤ì— fë¥¼ ë¶™ì—¬ì„œ í‘œí˜„
 	double dblNum = 10.2;		// 8Byte
-	// ½Ç¼ö µÚ¿¡ f¸¦ ¾ÈÀû´Â ´Ù¸é ÀÚ·áÇüÀº double, Àû´Â´Ù¸é float
 
-	// Çü½Ä ÁöÁ¤ÀÚ, ¼­½Ä¹®ÀÚ
-	// -> Á¶»ç °úÁ¦
-	printf("===== ¹®ÀÚÇü(Á¤¼öÇü) Ãâ·Â =====\n");
-	printf("Char (%llu) : %c\n\n", sizeof(ch), ch);	// º¯¼ö ch´Â char·Î ¼±¾ğµÇ¾ú±â ¶§¹®¿¡ Å©±â´Â 1(Byte)·Î char¿Í °°´Ù.
-	// %llu ¿Í sizeof(ch)ÀÌ ´ëÀÀµÈ´Ù. ÄŞ¸¶ ÇÏ³ª´ç µÚ¿¡ º¯¼ö ÇÑ°³
-	// ll : longlong, u : unsigned -> ºÎÈ£°¡ ¾ø´Â 8Byte
-	// signed -> ºÎÈ£°¡ ÀÖ´Â
-	// unsigned -> ºÎÈ£°¡ ¾ø´Â
-	// sizeof(ÀÚ·áÇü, º¯¼ö) -> ÀÚ·áÇü È¤Àº º¯¼öÀÇ Å©±â¸¦ ³ªÅ¸³½´Ù.(Byte ´ÜÀ§)
-	// %c´Â character·Î ÇüÅÂ·Î Ãâ·Â, character´Â ¹®ÀÚÇü ¶Ç´Â Á¤¼öÇüÀÌ¹Ç·Î Á¤¼öÇüÀ¸·Îµµ Ãâ·ÂÀÌ °¡´ÉÇÏ´Ù.
-	// %d -> decimal -> 10Áø¼ö Á¤¼öÇü(ºÎÈ£°¡ ÀÖ´Â)
+	// ì–¸ì–´, ì»´íŒŒì¼ëŸ¬, í”Œë«í¼(x64, x86), ì ˆëŒ€ì ì¸ ìˆ˜ì¹˜(Byte)ê°€ ì•„ë‹ˆë‹¤
+	// short <= int <= long <= long long, ë³€í•˜ì§€ ì•ŠëŠ” ê³µì‹
 
-	printf("\n===== Á¤¼öÇü Ãâ·Â =====\n");
-	printf("Short (%llu) : %d\n", sizeof(shortNum), shortNum);
+	// í˜•ì‹ ì§€ì •ì, ì„œì‹ë¬¸ì
+	printf("===== ë¬¸ìí˜•(ì •ìˆ˜í˜•) ì¶œë ¥ =====\n");
+	printf("Char (%llu) : %c\n\n", sizeof(ch), ch);
+	// %llu ì™€ sizeof(ch)ì´ ëŒ€ì‘ëœë‹¤. ì½¤ë§ˆ í•˜ë‚˜ë‹¹ ë’¤ì— ë³€ìˆ˜ í•œê°œ
+	// ll : longlong, u : unsigned -> ë¶€í˜¸ê°€ ì—†ëŠ” 8Byte
+	// signed -> ë¶€í˜¸ê°€ ìˆëŠ”
+	// unsigned -> ë¶€í˜¸ê°€ ì—†ëŠ”
+	// sizeof(ìë£Œí˜•, ë³€ìˆ˜) -> ìë£Œí˜• ë˜ëŠ” ë³€ìˆ˜ì˜ í¬ê¸°ë¥¼ ë‚˜íƒ€ë‚¸ë‹¤.(Byte ë‹¨ìœ„)
+	// %cëŠ” characterë¡œ í˜•íƒœë¡œ ì¶œë ¥, ë¬¸ìí˜• ë˜ëŠ” ì •ìˆ˜í˜•ì„ ì¶œë ¥í•  ìˆ˜ ìˆë‹¤.
+	// %d(decimal, ì†Œìˆ˜ ë˜ëŠ” ì‹­ì§„ë²•) 10ì§„ìˆ˜ ì •ìˆ˜í˜•(ë¶€í˜¸ê°€ ìˆëŠ”)
+	/*
+	ï»¿í˜•ì‹ ì§€ì •ì
+	%c : ë¬¸ì í‘œí˜„, char
+	%s : ë¬¸ìì—´ í‘œí˜„, char*ï»¿
+
+	%hd : 10ì§„ìˆ˜ ì •ìˆ˜(2Byte) í‘œí˜„, shortí˜•ê³¼ ëŒ€ì‘
+	%d : 10ì§„ìˆ˜ ì •ìˆ˜(4Byte) í‘œí˜„, intí˜•ê³¼ ëŒ€ì‘
+	%ld : 10ì§„ìˆ˜ ì •ìˆ˜(8Byte) í‘œí˜„, longí˜•ê³¼ ëŒ€ì‘
+	%lld : 10ì§„ìˆ˜ ì •ìˆ˜(8Byte) í‘œí˜„, long longí˜•ê³¼ ëŒ€ì‘
+	%u : ë¶€í˜¸ì—†ëŠ” 10ì§„ìˆ˜(4Byte) í‘œí˜„, unsigned intí˜•ê³¼ ëŒ€ì‘
+	%lu : ë¶€í˜¸ì—†ëŠ” 10ì§„ìˆ˜(8Byte) í‘œí˜„, unsigned longí˜•ê³¼ ëŒ€ì‘
+	%llu : ë¶€í˜¸ì—†ëŠ” 10ì§„ìˆ˜(8Byte) í‘œí˜„, unsigned long longí˜•ê³¼ ëŒ€ì‘
+	%o : 8ì§„ìˆ˜ í‘œí˜„, intí˜•ê³¼ ëŒ€ì‘
+	%x : 16ì§„ìˆ˜ í‘œí˜„, intí˜•ê³¼ ëŒ€ì‘
+	
+	%f : ì‹¤ìˆ˜í˜•(4Byte) í‘œí˜„, floatí˜•ê³¼ ëŒ€ì‘
+	%lf : ì‹¤ìˆ˜í˜•(8Byte) í‘œí˜„, doubleí˜•ê³¼ ëŒ€ì‘
+
+	%p : ì£¼ì†Œê°’ í‘œí˜„, void*í˜•ê³¼ ëŒ€ì‘	
+	*/
+	printf("\n===== ì •ìˆ˜í˜• ì¶œë ¥ =====\n");
+	printf("Short (%llu) : %hd\n", sizeof(shortNum), shortNum);
 	printf("Int (%llu) : %d\n", sizeof(integerNum), integerNum);
 	printf("Long (%llu) : %ld\n", sizeof(longNum), longNum);
 	printf("Long Long (%llu) : %lld\n\n", sizeof(longLongNum), longLongNum);
 
-	printf("===== ½Ç¼öÇü Ãâ·Â =====\n");
+	printf("===== ì‹¤ìˆ˜í˜• ì¶œë ¥ =====\n");
 	printf("Float (%llu) : %.15f\n", sizeof(fltNum), fltNum);
 	printf("Double (%llu) : %lf\n\n", sizeof(dblNum), dblNum);
-	// %¿Í f»çÀÌ¿¡ .¼ıÀÚ¸¦ ³ÖÀ¸¸é ¼ıÀÚ¸¸Å­ ¼Ò¼öÁ¡ÀÌ Ãâ·ÂµÈ´Ù.
+	// %ì™€ fì‚¬ì´ì— .ìˆ«ìë¥¼ ë„£ìœ¼ë©´ ìˆ«ìë§Œí¼ ì†Œìˆ˜ì ì´ ì¶œë ¥ëœë‹¤.
+
+	/*
+	const(constant : ë³€í•œì—†ëŠ”) í‚¤ì›Œë“œ
+	ë³€ìˆ˜ì˜ ìƒìˆ˜í™”
+	ìˆ˜ì •í•  ìˆ˜ ì—†ê²Œëœë‹¤.
+	*/
+	const int num = 2;
+//	num = 3;	// ì˜¤ë¥˜, 'ì‹ì´ ìˆ˜ì •í•  ìˆ˜ ìˆëŠ” lvalueì—¬ì•¼ í•©ë‹ˆë‹¤.'
+
 }
 
 void DataRange()
 {
-	printf("charÀÇ ¹üÀ§ : %d ~ %d\n", SCHAR_MIN, SCHAR_MAX);
-	printf("unsigned charÀÇ ¹üÀ§ : %u ~ %u\n", 0U, UCHAR_MAX);
+	printf("charì˜ ë²”ìœ„ : %d ~ %d\n", SCHAR_MIN, SCHAR_MAX);
+	printf("unsigned charì˜ ë²”ìœ„ : %u ~ %u\n", 0U, UCHAR_MAX);
 
-	printf("shortÀÇ ¹üÀ§ : %d ~ %d\n", SHRT_MIN, SHRT_MAX);
-	printf("unsigned shortÀÇ ¹üÀ§ : %u ~ %u\n", 0U, USHRT_MAX);
+	printf("shortì˜ ë²”ìœ„ : %d ~ %d\n", SHRT_MIN, SHRT_MAX);
+	printf("unsigned shortì˜ ë²”ìœ„ : %u ~ %u\n", 0U, USHRT_MAX);
 
-	printf("intÀÇ ¹üÀ§ : %d ~ %d\n", INT_MIN, INT_MAX);
-	printf("unsigned intÀÇ ¹üÀ§ : %u ~ %u\n", 0U, UINT_MAX);
+	printf("intì˜ ë²”ìœ„ : %d ~ %d\n", INT_MIN, INT_MAX);
+	printf("unsigned intì˜ ë²”ìœ„ : %u ~ %u\n", 0U, UINT_MAX);
 
-	printf("longÀÇ ¹üÀ§ : %d ~ %d\n", LONG_MIN, LONG_MAX);
-	printf("unsigned longÀÇ ¹üÀ§ : %u ~ %lu\n", 0U, ULONG_MAX);
+	printf("longì˜ ë²”ìœ„ : %d ~ %d\n", LONG_MIN, LONG_MAX);
+	printf("unsigned longì˜ ë²”ìœ„ : %u ~ %lu\n", 0U, ULONG_MAX);
 
-	printf("long longÀÇ ¹üÀ§ : %lld ~ %lld\n", LLONG_MIN, LLONG_MAX);
-	printf("unsigned long longÀÇ ¹üÀ§ : %u ~ %llu\n", 0U, ULLONG_MAX);
+	printf("long longì˜ ë²”ìœ„ : %lld ~ %lld\n", LLONG_MIN, LLONG_MAX);
+	printf("unsigned long longì˜ ë²”ìœ„ : %u ~ %llu\n", 0U, ULLONG_MAX);
 
-	printf("floatÀÇ ¹üÀ§ : %f ~ %f ~ %f\n", -FLT_MAX, FLT_MIN, FLT_MAX);			// FLT_MIN ÃÖ´ëÇÑ 0¿¡ °¡±î¿î ¼ö(0ÀÌ ¾Æ´Ï´Ù)
-	printf("doubleÀÇ ¹üÀ§ : %lf ~ %lf ~ %lf\n\n", -DBL_MAX, DBL_MIN, DBL_MAX);	// DBL_MIN ÃÖ´ëÇÑ 0¿¡ °¡±î¿î ¼ö(0ÀÌ ¾Æ´Ï´Ù)
+	printf("floatì˜ ë²”ìœ„ : %f ~ %f ~ %f\n", -FLT_MAX, FLT_MIN, FLT_MAX);			// FLT_MIN : 0ì— ê°€ê¹Œìš´ ìˆ˜(0ì´ ì•„ë‹ˆë‹¤)
+	printf("doubleì˜ ë²”ìœ„ : %lf ~ %lf ~ %lf\n\n", -DBL_MAX, DBL_MIN, DBL_MAX);	// DBL_MIN : 0ì— ê°€ê¹Œìš´ ìˆ˜(0ì´ ì•„ë‹ˆë‹¤)
+}
+
+void DataFlow()
+{
+	/*
+	ì–¸ë”í”Œë¡œìš°(underflow)
+	ë©”ëª¨ë¦¬ ê³µê°„ì˜ ìµœì†Œë³´ë‹¤ ì‘ì€ê°’ì„ ì…ë ¥í•  ê²½ìš°, ìµœëŒ€ê°’ì´ë˜ëŠ” í˜„ìƒ
+	*/
+	char num = -129;
+	printf("UnderFlow : %d\n\n", num);
+
+	/*
+	ì˜¤ë²„í”Œë¡œìš°(overflow)
+	ë©”ëª¨ë¦¬ ê³µê°„ì˜ ìµœëŒ€ë³´ë‹¤ í°ê°’ì„ ì…ë ¥í•  ê²½ìš°, ìµœì†Œê°’ì´ë˜ëŠ” í˜„ìƒï»¿
+	*/
+	char num1 = 128;
+	printf("OverFlow : %d", num1);
 }
