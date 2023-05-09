@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.c" />
+    <ClCompile Include="Conditional\Conditional.c" />
     <ClCompile Include="DataType\DataType.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Operator\Operator.c" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Conditional\Conditional.h" />
     <ClInclude Include="DataType\DataType.h" />
     <ClInclude Include="Operator\Operator.h" />
     <ClInclude Include="stdafx.h" />
