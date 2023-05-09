@@ -4,36 +4,45 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="stdafx.c" />
     <ClCompile Include="Base\Base.c">
-      <Filter>Base</Filter>
+      <Filter>01_Base</Filter>
     </ClCompile>
     <ClCompile Include="DataType\DataType.c">
-      <Filter>DataType</Filter>
+      <Filter>02_DataType</Filter>
     </ClCompile>
     <ClCompile Include="Operator\Operator.c">
-      <Filter>Operator</Filter>
+      <Filter>03_Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="Conditional\Conditional.c">
+      <Filter>04_Conditional</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Base\Base.h">
-      <Filter>Base</Filter>
+      <Filter>01_Base</Filter>
     </ClInclude>
     <ClInclude Include="DataType\DataType.h">
-      <Filter>DataType</Filter>
+      <Filter>02_DataType</Filter>
     </ClInclude>
     <ClInclude Include="Operator\Operator.h">
-      <Filter>Operator</Filter>
+      <Filter>03_Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="Conditional\Conditional.h">
+      <Filter>04_Conditional</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Base">
+    <Filter Include="01_Base">
       <UniqueIdentifier>{33ad5658-a19b-4239-a15b-a1b3dd4e7324}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DataType">
+    <Filter Include="02_DataType">
       <UniqueIdentifier>{afb07552-5a72-4ea2-b22a-1769c994f297}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Operator">
+    <Filter Include="03_Operator">
       <UniqueIdentifier>{0cb147ab-d875-4da0-847d-0870abba21db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Conditional">
+      <UniqueIdentifier>{14534656-0285-406d-ab7c-0bf0260361d1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
