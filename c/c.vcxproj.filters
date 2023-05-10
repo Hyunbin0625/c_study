@@ -15,6 +15,7 @@
     <ClCompile Include="Conditional\Conditional.c">
       <Filter>04_Conditional</Filter>
     </ClCompile>
+    <ClCompile Include="Loop\Loop.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -30,6 +31,7 @@
     <ClInclude Include="Conditional\Conditional.h">
       <Filter>04_Conditional</Filter>
     </ClInclude>
+    <ClInclude Include="Loop\Loop.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Base">

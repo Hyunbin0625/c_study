@@ -142,6 +142,7 @@
     <ClCompile Include="Base\Base.c" />
     <ClCompile Include="Conditional\Conditional.c" />
     <ClCompile Include="DataType\DataType.c" />
+    <ClCompile Include="Loop\Loop.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Operator\Operator.c" />
     <ClCompile Include="stdafx.c">
@@ -155,6 +156,7 @@
     <ClInclude Include="Base\Base.h" />
     <ClInclude Include="Conditional\Conditional.h" />
     <ClInclude Include="DataType\DataType.h" />
+    <ClInclude Include="Loop\Loop.h" />
     <ClInclude Include="Operator\Operator.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
