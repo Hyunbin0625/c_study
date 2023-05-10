@@ -15,7 +15,9 @@
     <ClCompile Include="Conditional\Conditional.c">
       <Filter>04_Conditional</Filter>
     </ClCompile>
-    <ClCompile Include="Loop\Loop.c" />
+    <ClCompile Include="Loop\Loop.c">
+      <Filter>05_Loop</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -31,7 +33,9 @@
     <ClInclude Include="Conditional\Conditional.h">
       <Filter>04_Conditional</Filter>
     </ClInclude>
-    <ClInclude Include="Loop\Loop.h" />
+    <ClInclude Include="Loop\Loop.h">
+      <Filter>05_Loop</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Base">
@@ -45,6 +49,9 @@
     </Filter>
     <Filter Include="04_Conditional">
       <UniqueIdentifier>{14534656-0285-406d-ab7c-0bf0260361d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_Loop">
+      <UniqueIdentifier>{8753be81-1e84-4299-9801-75189275e212}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
