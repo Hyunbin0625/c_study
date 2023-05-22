@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Array\Arrays.c" />
     <ClCompile Include="Base\Base.c" />
     <ClCompile Include="Conditional\Conditional.c" />
     <ClCompile Include="DataType\DataType.c" />
@@ -153,6 +154,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array\Arrays.h" />
     <ClInclude Include="Base\Base.h" />
     <ClInclude Include="Conditional\Conditional.h" />
     <ClInclude Include="DataType\DataType.h" />

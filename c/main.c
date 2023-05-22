@@ -8,7 +8,8 @@ int main()
 //	DataType();
 //	Operator();
 //	Conditional();
-	Loop();
+//	Loop();
+	Arrays();
 
 	return 0;	// 프로그램이 잘 종료되었는지 check하기 위해(잘 종료 되었다면 0출력)
 }

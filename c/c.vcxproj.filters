@@ -18,6 +18,9 @@
     <ClCompile Include="Loop\Loop.c">
       <Filter>05_Loop</Filter>
     </ClCompile>
+    <ClCompile Include="Array\Arrays.c">
+      <Filter>06_Arrays</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -36,6 +39,9 @@
     <ClInclude Include="Loop\Loop.h">
       <Filter>05_Loop</Filter>
     </ClInclude>
+    <ClInclude Include="Array\Arrays.h">
+      <Filter>06_Arrays</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Base">
@@ -52,6 +58,9 @@
     </Filter>
     <Filter Include="05_Loop">
       <UniqueIdentifier>{8753be81-1e84-4299-9801-75189275e212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_Arrays">
+      <UniqueIdentifier>{a4d90b5c-02eb-44e7-85f5-a483a20b240e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
