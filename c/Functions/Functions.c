@@ -184,5 +184,4 @@ int GetFactorial(int val)   // 특정 상황에서 사용하면 생산성을 높
     {
         return  val * GetFactorial(val - 1);
     }
-
 }

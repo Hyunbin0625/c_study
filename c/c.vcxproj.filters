@@ -18,8 +18,11 @@
     <ClCompile Include="Loop\Loop.c">
       <Filter>05_Loop</Filter>
     </ClCompile>
-    <ClCompile Include="Array\Arrays.c">
+    <ClCompile Include="Arrays\Arrays.c">
       <Filter>06_Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Functions.c">
+      <Filter>07_Functions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -39,8 +42,11 @@
     <ClInclude Include="Loop\Loop.h">
       <Filter>05_Loop</Filter>
     </ClInclude>
-    <ClInclude Include="Array\Arrays.h">
+    <ClInclude Include="Arrays\Arrays.h">
       <Filter>06_Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Functions.h">
+      <Filter>07_Functions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +67,9 @@
     </Filter>
     <Filter Include="06_Arrays">
       <UniqueIdentifier>{a4d90b5c-02eb-44e7-85f5-a483a20b240e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_Functions">
+      <UniqueIdentifier>{1d13cce0-40ba-418d-960e-e9d2f1d5995c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
