@@ -1,16 +1,16 @@
-#pragma once
+ï»¿#pragma once
 
-// scanf °°Àº ÇÔ¼öµéÀº ¾ÈÀüÇÏÁö ¾Ê±â ¶§¹®¿¡ °æ°í¸¦ ¹«½ÃÇÏ°í »ç¿ëÇÏ±â À§ÇØ
+// scanf ê°™ì€ í•¨ìˆ˜ë“¤ì€ ì•ˆì „í•˜ì§€ ì•Šê¸° ë•Œë¬¸ì— ê²½ê³ ë¥¼ ë¬´ì‹œí•˜ê³  ì‚¬ìš©í•˜ê¸° ìœ„í•´
 #define _CRT_SECURE_NO_WARNINGS
 
-// c¾ğ¾îÀÇ Ç¥ÁØÀÔÃâ·Â Çì´õ
+// cì–¸ì–´ì˜ í‘œì¤€ì…ì¶œë ¥ í—¤ë”
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
-// Files, Base¿¡ ¼±¾ğÇÑ ÇÔ¼ö¿¡ Á¢±ÙÇÏ±â À§ÇØ Æ÷ÇÔ
+// Files, Baseì— ì„ ì–¸í•œ í•¨ìˆ˜ì— ì ‘ê·¼í•˜ê¸° ìœ„í•´ í¬í•¨
 #include "Base/Base.h"
 #include "DataType/DataType.h"
 #include "Operator/Operator.h"
@@ -18,3 +18,4 @@
 #include "Loop/Loop.h"
 #include "Arrays/Arrays.h"
 #include "Functions/Functions.h"
+#include "ï»¿User-DefinedTypes/ï»¿User-DefinedTypes.h"

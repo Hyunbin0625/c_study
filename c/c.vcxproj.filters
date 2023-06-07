@@ -24,6 +24,9 @@
     <ClCompile Include="Functions\Functions.c">
       <Filter>07_Functions</Filter>
     </ClCompile>
+    <ClCompile Include="﻿User-DefinedTypes\﻿User-DefinedTypes.c">
+      <Filter>﻿User-DefinedTypes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -48,6 +51,9 @@
     <ClInclude Include="Functions\Functions.h">
       <Filter>07_Functions</Filter>
     </ClInclude>
+    <ClInclude Include="﻿User-DefinedTypes\﻿User-DefinedTypes.h">
+      <Filter>﻿User-DefinedTypes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01_Base">
@@ -70,6 +76,9 @@
     </Filter>
     <Filter Include="07_Functions">
       <UniqueIdentifier>{1d13cce0-40ba-418d-960e-e9d2f1d5995c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="﻿User-DefinedTypes">
+      <UniqueIdentifier>{220f9ef3-e2e4-4308-b8e9-d271b829f90b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

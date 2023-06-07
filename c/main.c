@@ -1,18 +1,19 @@
-#include "stdafx.h"
+ï»¿#include "stdafx.h"
 
 
-int globalVal = 30;	// Àü¿ª º¯¼ö¸¦ ³²¹ßÀ» ÇÏ¸é, Data ¿µ¿ª°ú ÀÌ¸§À» ´Ù Â÷ÁöÇÏ¹Ç·Î ¿©·¯¹®Á¦°¡ »ý±æ ¼ö ÀÖ´Ù, Á¤¸»·Î ÇÊ¿äÇÑ °æ¿ì »ç¿ë
+int globalVal = 30;	// ì „ì—­ ë³€ìˆ˜ë¥¼ ë‚¨ë°œì„ í•˜ë©´, Data ì˜ì—­ê³¼ ì´ë¦„ì„ ë‹¤ ì°¨ì§€í•˜ë¯€ë¡œ ì—¬ëŸ¬ë¬¸ì œê°€ ìƒê¸¸ ìˆ˜ ìžˆë‹¤, ì •ë§ë¡œ í•„ìš”í•œ ê²½ìš° ì‚¬ìš©
 
-// ÇÁ·Î±×·¥ ½ÇÇà ½Ã, ¿î¿µÃ¼Á¦¿¡ ÀÇÇØ¼­ Ã³À½ È£ÃâµÇ´Â ÇÔ¼ö(¸ÞÀÎ ÇÔ¼ö)
+// í”„ë¡œê·¸ëž¨ ì‹¤í–‰ ì‹œ, ìš´ì˜ì²´ì œì— ì˜í•´ì„œ ì²˜ìŒ í˜¸ì¶œë˜ëŠ” í•¨ìˆ˜(ë©”ì¸ í•¨ìˆ˜)
 int main()
 {
-//	Base();	// ¸ÞÀÎ ÇÔ¼ö¿¡¼­ Base ÇÔ¼ö¸¦ È£ÃâÇØ ÄÜ¼ÖÃ¢ Ãâ·Â
+//	Base();	// ë©”ì¸ í•¨ìˆ˜ì—ì„œ Base í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•´ ì½˜ì†”ì°½ ì¶œë ¥
 //	DataType();
 //	Operator();
 //	Conditional();
 //	Loop();
 //	Arrays();
-	Functions();
+//	Functions();
+	ï»¿UserDefinedTypes();
 
-	return 0;	// ÇÁ·Î±×·¥ÀÌ Àß Á¾·áµÇ¾ú´ÂÁö checkÇÏ±â À§ÇØ(Àß Á¾·á µÇ¾ú´Ù¸é 0Ãâ·Â)
+	return 0;	// í”„ë¡œê·¸ëž¨ì´ ìž˜ ì¢…ë£Œë˜ì—ˆëŠ”ì§€ checkí•˜ê¸° ìœ„í•´(ìž˜ ì¢…ë£Œ ë˜ì—ˆë‹¤ë©´ 0ì¶œë ¥)
 }
