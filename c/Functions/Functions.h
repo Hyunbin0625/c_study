@@ -1,6 +1,6 @@
 #pragma once
 
-void Functions();
+void C07();
 
 void Function();
 int GetSumValue(int num1, int num2);

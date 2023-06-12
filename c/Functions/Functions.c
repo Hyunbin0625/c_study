@@ -1,6 +1,6 @@
 ﻿#include "stdafx.h"
 
-void Functions()
+void C07()
 {
 //  Function();
 //  Random();

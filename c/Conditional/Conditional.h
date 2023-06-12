@@ -1,6 +1,6 @@
 #pragma once
 
-void Conditional();
+void C04();
 
 void If();
 void Switch();

@@ -1,9 +1,8 @@
 ﻿#include "stdafx.h"
 #include <limits.h>
 #include <float.h>
-#include "DataType.h"
 
-void DataType()
+void C02()
 {
 //	DataSize();
 //	DataRange();

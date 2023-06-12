@@ -1,6 +1,6 @@
 #pragma once
 
-void Loop();
+void C05();
 
 void For();
 void While();
