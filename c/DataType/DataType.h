@@ -1,6 +1,6 @@
 #pragma once
 
-void DataType();
+void C02();
 
 void DataSize();
 void DataRange();
