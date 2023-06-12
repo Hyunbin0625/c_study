@@ -1,6 +1,6 @@
 #pragma once
 
-void Arrays();
+void C06();
 
 void Array();
 void Matrix();

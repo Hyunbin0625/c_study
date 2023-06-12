@@ -1,6 +1,6 @@
 ﻿#include "stdafx.h"
 
-void Arrays()
+void C06()
 {
 //	Array();
 //	Matrix();
