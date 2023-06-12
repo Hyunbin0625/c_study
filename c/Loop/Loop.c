@@ -1,6 +1,6 @@
 ﻿#include "stdafx.h"
 
-void Loop()
+void C05()
 {
 //	For();
 //	While();

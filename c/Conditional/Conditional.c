@@ -1,7 +1,6 @@
 ﻿#include "stdafx.h"
-#include "Conditional.h"
 
-void Conditional()
+void C04()
 {
 //  If();
     Switch();

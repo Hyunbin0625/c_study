@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-void ﻿UserDefinedTypes();
+void C08();
 
 
 typedef struct Player	// typedef으로 별명을 지어줄 수 있다.

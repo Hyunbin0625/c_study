@@ -1,6 +1,6 @@
 ﻿#include "stdafx.h"
 
-void ﻿UserDefinedTypes()
+void C08()
 {
 //	Structure();
 //	Union();
