@@ -1,5 +1,9 @@
 ﻿#include "stdafx.h"
-#include "Operator.h"
+
+void C03()
+{
+	Operator();
+}
 
 void Operator()
 {

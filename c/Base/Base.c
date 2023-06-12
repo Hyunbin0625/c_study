@@ -1,5 +1,9 @@
 #include "stdafx.h"
-#include "Base.h"
+
+void C01()
+{
+	Base();
+}
 
 void Func(int x);
 
