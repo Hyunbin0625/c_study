@@ -19,3 +19,4 @@
 #include "Arrays/Arrays.h"
 #include "Functions/Functions.h"
 #include "﻿User-DefinedTypes/﻿User-DefinedTypes.h"
+#include "Pointer/Pointer.h"

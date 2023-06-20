@@ -25,7 +25,10 @@
       <Filter>07_Functions</Filter>
     </ClCompile>
     <ClCompile Include="﻿User-DefinedTypes\﻿User-DefinedTypes.c">
-      <Filter>﻿User-DefinedTypes</Filter>
+      <Filter>08_﻿User-DefinedTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointer\Pointer.c">
+      <Filter>09_Pointer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +55,10 @@
       <Filter>07_Functions</Filter>
     </ClInclude>
     <ClInclude Include="﻿User-DefinedTypes\﻿User-DefinedTypes.h">
-      <Filter>﻿User-DefinedTypes</Filter>
+      <Filter>08_﻿User-DefinedTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer\Pointer.h">
+      <Filter>09_Pointer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -77,7 +83,10 @@
     <Filter Include="07_Functions">
       <UniqueIdentifier>{1d13cce0-40ba-418d-960e-e9d2f1d5995c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="﻿User-DefinedTypes">
+    <Filter Include="09_Pointer">
+      <UniqueIdentifier>{8f2f1545-31d4-4058-a5af-f972ce67c4d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08_﻿User-DefinedTypes">
       <UniqueIdentifier>{220f9ef3-e2e4-4308-b8e9-d271b829f90b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
